@@ -22,6 +22,14 @@ function onWindowLoad() {
             if (zVideoItem[i] != null)
                 zVideoItem[i].parentNode.removeChild(zVideoItem[i]);
         }
+
+        const videoAnswerPlayer = document.getElementsByClassName("VideoAnswerPlayer-video")
+
+        for(let i=videoAnswerPlayer.length-1; i>=0; i--){
+            if (videoAnswerPlayer[i] != null)
+                videoAnswerPlayer[i].parentNode.removeChild(videoAnswerPlayer[i]);
+        }
+
     }
 
     let blockAdvert = document.getElementById("blockAdvert");
